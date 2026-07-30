@@ -1,42 +1,150 @@
 .about {
+  padding: 10rem 0;
+}
 
-    border-top: 1px solid var(--border);
+.about-header {
+  max-width: 700px;
+  margin-bottom: 6rem;
+}
+
+.eyebrow {
+  display: block;
+
+  margin-bottom: 1rem;
+
+  font-size: .85rem;
+  letter-spacing: .25rem;
+  text-transform: uppercase;
+
+  color: var(--text-light);
+}
+
+.line {
+  width: 70px;
+  height: 1px;
+
+  margin-bottom: 2rem;
+
+  background: var(--border);
+}
+
+.about-header h2 {
+  font-size: clamp(3rem, 5vw, 4.5rem);
+  line-height: .95;
+  font-weight: 600;
 }
 
 .about-grid {
+  display: grid;
+  grid-template-columns: 1.3fr .7fr;
+  gap: 7rem;
+
+  align-items: start;
+}
+
+.about-content p {
+  margin-bottom: 2rem;
+
+  font-size: 1.1rem;
+  line-height: 2;
+
+  color: var(--text-light);
+}
+
+.about-content p:first-child {
+  color: var(--text);
+  font-weight: 500;
+}
+
+.about-info {
+  position: sticky;
+  top: 120px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.info-item {
+  padding-bottom: 2rem;
+
+  border-bottom: 1px solid var(--border);
+}
+
+.info-item:last-child {
+  border-bottom: none;
+}
+
+.label {
+  display: block;
+
+  margin-bottom: .9rem;
+
+  font-size: .75rem;
+  letter-spacing: .22rem;
+  text-transform: uppercase;
+
+  color: var(--text-light);
+}
+
+.info-item p {
+  line-height: 1.8;
+  font-size: 1rem;
+}
+
+@media (max-width: 992px) {
+
+  .about-grid {
+
+    grid-template-columns: 1fr;
+    gap: 4rem;
+
+  }
+
+  .about-info {
+
+    position: static;
 
     display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
 
-    grid-template-columns: 220px 1fr;
+  }
 
-    gap: 4rem;
 }
 
-.section-label {
+@media (max-width: 768px) {
 
-    color: var(--text-light);
+  .about {
 
-    text-transform: uppercase;
+    padding: 6rem 0;
 
-    letter-spacing: .2rem;
+  }
 
-    font-size: .8rem;
-}
+  .about-header {
 
-.about h2 {
+    margin-bottom: 4rem;
 
-    font-size: clamp(2.5rem,5vw,4rem);
+  }
 
-    margin-bottom: 2rem;
+  .about-header h2 {
 
-    line-height: 1.1;
-}
+    font-size: 2.5rem;
 
-.about p {
+  }
 
-    max-width: 700px;
+  .about-content p {
 
-    color: var(--text-light);
+    font-size: 1rem;
 
-    font-size: 1.15rem;
+    line-height: 1.9;
+
+  }
+
+  .about-info {
+
+    grid-template-columns: 1fr;
+
+  }
+
 }

@@ -1,61 +1,39 @@
 header {
-
     position: fixed;
-
     inset: 0 0 auto 0;
-
     backdrop-filter: blur(18px);
-
     background: rgba(248, 246, 242, .75);
-
     border-bottom: 1px solid var(--border);
-
     z-index: 100;
 }
 
 .navbar {
-
     height: 72px;
-
     display: flex;
-
     align-items: center;
-
     justify-content: space-between;
 }
 
 .logo {
-
     font-family: "Cormorant Garamond", serif;
-
     font-size: 2rem;
-
     font-weight: 600;
 }
 
 nav {
-
     display: flex;
-
     gap: 2rem;
 }
 
 nav a {
-
     font-family: "Inter", sans-serif;
-
     font-size: .8rem;
-
     text-transform: uppercase;
-
     letter-spacing: .15rem;
-
     color: var(--text-light);
-
     transition: .25s;
 }
 
 nav a:hover {
-
     color: var(--text);
 }

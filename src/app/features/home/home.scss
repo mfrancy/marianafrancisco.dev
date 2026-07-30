@@ -1,184 +1,113 @@
-.hero{
-
-    position:relative;
-
-    overflow:hidden;
-
-    min-height:calc(100vh - 72px);
-
-    display:flex;
-
-    align-items:center;
+.hero {
+    position: relative;
+    overflow: hidden;
+    min-height: calc(100vh - 72px);
+    display: flex;
+    align-items: center;
 }
 
-.hero-glow{
-
-    position:absolute;
-
-    width:520px;
-
-    height:520px;
-
-    border-radius:50%;
-
-    background:radial-gradient(
-
-        circle,
-
-        rgba(240,231,205,.55) 0%,
-
-        rgba(240,231,205,.18) 45%,
-
-        transparent 70%
-
-    );
-
-    filter:blur(70px);
-
-    pointer-events:none;
-
-    z-index:0;
+.hero-glow {
+    position: absolute;
+    width: 520px;
+    height: 520px;
+    border-radius: 50%;
+    background: radial-gradient(circle,
+            rgba(240, 231, 205, .55) 0%,
+            rgba(240, 231, 205, .18) 45%,
+            transparent 70%);
+    filter: blur(70px);
+    pointer-events: none;
+    z-index: 0;
 }
 
-.hero-grid{
-
-    position:relative;
-
-    z-index:1;
-
-    display:grid;
-
-    grid-template-columns:1fr 520px;
-
-    gap:6rem;
-
-    align-items:center;
+.hero-grid {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 1fr 520px;
+    gap: 6rem;
+    align-items: center;
 }
 
-.hero-content{
-
-    max-width:650px;
+.hero-content {
+    max-width: 650px;
 }
 
-.eyebrow{
-
-    display:block;
-
-    font-size:.85rem;
-
-    letter-spacing:.25rem;
-
-    text-transform:uppercase;
-
-    color:var(--text-light);
-
-    margin-bottom:1rem;
+.eyebrow {
+    display: block;
+    font-size: .85rem;
+    letter-spacing: .25rem;
+    text-transform: uppercase;
+    color: var(--text-light);
+    margin-bottom: 1rem;
 }
 
-.line{
-
-    width:70px;
-
-    height:1px;
-
-    background:var(--border);
-
-    margin-bottom:2rem;
+.line {
+    width: 70px;
+    height: 1px;
+    background: var(--border);
+    margin-bottom: 2rem;
 }
 
-.hero h1{
-
-    font-size:clamp(4.5rem,9vw,7rem);
-
-    line-height:.88;
-
-    font-weight:600;
-
-    margin-bottom:2rem;
+.hero h1 {
+    font-size: clamp(4.5rem, 9vw, 7rem);
+    line-height: .88;
+    font-weight: 600;
+    margin-bottom: 2rem;
 }
 
-.hero p{
-
-    max-width:520px;
-
-    line-height:1.8;
-
-    color:var(--text-light);
-
-    font-size:1.1rem;
-
-    margin-bottom:3rem;
+.hero p {
+    max-width: 520px;
+    line-height: 1.8;
+    color: var(--text-light);
+    font-size: 1.1rem;
+    margin-bottom: 3rem;
 }
 
-.hero-link{
-
-    display:inline-flex;
-
-    align-items:center;
-
-    gap:.8rem;
-
-    text-transform:uppercase;
-
-    letter-spacing:.15rem;
-
-    font-weight:600;
-
-    font-size:.85rem;
+.hero-link {
+    display: inline-flex;
+    align-items: center;
+    gap: .8rem;
+    text-transform: uppercase;
+    letter-spacing: .15rem;
+    font-weight: 600;
+    font-size: .85rem;
 }
 
-.hero-link span{
-
-    transition:.3s;
+.hero-link span {
+    transition: .3s;
 }
 
-.hero-link:hover span{
-
-    transform:translateX(8px);
+.hero-link:hover span {
+    transform: translateX(8px);
 }
 
-.hero-link::after{
-
-    content:"";
-
-    width:80px;
-
-    height:1px;
-
-    background:var(--text);
-
-    margin-left:1rem;
-
-    transition:.3s;
+.hero-link::after {
+    content: "";
+    width: 80px;
+    height: 1px;
+    background: var(--text);
+    margin-left: 1rem;
+    transition: .3s;
 }
 
-.hero-link:hover::after{
-
-    width:110px;
+.hero-link:hover::after {
+    width: 110px;
 }
 
-.hero-image{
-
-    display:flex;
-
-    justify-content:center;
+.hero-image {
+    display: flex;
+    justify-content: center;
 }
 
-.hero-image img{
-
-    width:420px;
-
-    height:420px;
-
-    object-fit:cover;
-
-    object-position:center;
-
-    border-radius:50%;
-
-    clip-path:circle(100%);
-
-    filter:grayscale(100%);
+.hero-image img {
+    width: 420px;
+    height: 420px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    clip-path: circle(100%);
+    filter: grayscale(100%);
 
     transition:
         transform .5s,
@@ -186,11 +115,8 @@
         box-shadow .5s;
 }
 
-.hero-image:hover img{
-
-    transform:scale(1.03);
-
-    filter:grayscale(0%);
-
-    box-shadow:0 25px 70px rgba(0,0,0,.12);
+.hero-image:hover img {
+    transform: scale(1.03);
+    filter: grayscale(0%);
+    box-shadow: 0 25px 70px rgba(0, 0, 0, .12);
 }
