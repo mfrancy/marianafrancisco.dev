@@ -2,7 +2,7 @@ header {
     position: fixed;
     inset: 0 0 auto 0;
     backdrop-filter: blur(18px);
-    background: rgba(248, 246, 242, .75);
+    background: rgba(248, 246, 242, 0.329);
     border-bottom: 1px solid var(--border);
     z-index: 100;
 }

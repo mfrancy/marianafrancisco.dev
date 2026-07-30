@@ -59,9 +59,9 @@ export class ProjectsComponent {
       technologies: [
         'Angular',
         'REST API',
-        'SCSS'
+        'PrimeNG'
       ],
-      githubUrl: 'https://github.com/mfrancy/aftercredits',
+      githubUrl: 'https://github.com/mfrancy/after-credits',
       liveUrl: ''
     },
   ];
