@@ -120,3 +120,74 @@
     filter: grayscale(0%);
     box-shadow: 0 25px 70px rgba(0, 0, 0, .12);
 }
+
+/* =======================
+   RESPONSIVIDADE
+======================= */
+
+@media (max-width: 992px) {
+
+  .hero {
+    min-height: auto;
+    padding: 5rem 0;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    justify-items: center;
+  }
+
+  .hero-content {
+    order: 2;
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .hero-image {
+    order: 1;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .hero-image img {
+    width: 320px;
+    height: 320px;
+    max-width: 85vw;
+    max-height: 85vw;
+  }
+
+  .line {
+    margin-inline: auto;
+  }
+
+  .hero-link {
+    justify-content: center;
+  }
+
+}
+
+@media (max-width: 576px) {
+
+  .hero {
+    padding: 4rem 0;
+  }
+
+  .hero h1 {
+    font-size: clamp(3rem, 15vw, 4.5rem);
+  }
+
+  .hero-image img {
+    width: 240px;
+    height: 240px;
+    max-width: 70vw;
+    max-height: 70vw;
+    margin-top: 20px;
+  }
+
+  .hero-link::after {
+    display: none;
+  }
+
+}

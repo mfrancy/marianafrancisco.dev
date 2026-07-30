@@ -37,3 +37,48 @@ nav a {
 nav a:hover {
     color: var(--text);
 }
+
+@media (max-width: 768px) {
+
+    .navbar {
+        height: 72px;
+        padding-inline: 1rem;
+    }
+
+    .logo {
+        font-size: 1.6rem;
+    }
+
+    nav {
+        gap: 1rem;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+
+    nav a {
+        font-size: .7rem;
+        letter-spacing: .08rem;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .navbar {
+        padding-inline: .75rem;
+    }
+
+    .logo {
+        font-size: 1.4rem;
+    }
+
+    nav {
+        gap: .6rem;
+    }
+
+    nav a {
+        font-size: .65rem;
+        letter-spacing: .04rem;
+    }
+
+}
