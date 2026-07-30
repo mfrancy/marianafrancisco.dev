@@ -1,11 +1,12 @@
 <section class="projects" id="projects">
   <div class="container">
     <div class="projects-header">
-      <span class="eyebrow"> SELECTED WORK </span>
+      <span class="eyebrow"> PROJETOS </span>
       <div class="line"></div>
-      <h2>Featured Projects</h2>
+      <h2>O que venho construindo</h2>
       <p>
-        A collection of projects that reflect my journey as a developer, from first ideas to more complete applications.
+        Uma seleção de projetos que representa minha evolução como desenvolvedora, desde os
+        primeiros estudos até aplicações mais completas.
       </p>
     </div>
     @for (project of projects; track project.title; let i = $index) {
@@ -42,7 +43,7 @@
           <div class="project-links">
             @if (project.liveUrl) {
               <a [href]="project.liveUrl" target="_blank" class="primary-link">
-                View Project
+                Ver Projeto
                 <span>↗</span>
               </a>
             }

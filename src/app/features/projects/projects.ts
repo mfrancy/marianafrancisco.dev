@@ -22,7 +22,7 @@ export class ProjectsComponent {
       number: '01',
       title: 'MarluHub',
       description:
-        'Inventory management platform created for Natura and O Boticário consultants. Built to simplify stock control, pricing and product organization.',
+        'Plataforma de gestão de estoque desenvolvida para consultoras e revendedoras. Criada para simplificar o controle de produtos, precificação e organização do catálogo.',
       image: 'images/projects/marluhub.png',
       technologies: [
         'Angular',
@@ -40,7 +40,7 @@ export class ProjectsComponent {
       number: '02',
       title: 'When The Blog',
       description:
-        'Editorial-inspired blog focused on typography, reading experience and clean interfaces, designed with a modern Angular architecture.',
+        'Blog inspirado no design editorial, com foco em tipografia, experiência de leitura e interfaces minimalistas, desenvolvido com uma arquitetura moderna em Angular.',
       image: 'images/projects/whentheblog.png',
       technologies: [
         'Angular',
@@ -54,7 +54,7 @@ export class ProjectsComponent {
       number: '03',
       title: 'AfterCredits',
       description:
-        'Movie discovery application integrated with the TMDB API, featuring search, trending titles and responsive layouts.',
+        'Aplicação para descoberta de filmes integrada à API do TMDB, com busca, títulos em destaque e interface responsiva.',
       image: 'images/projects/aftercredits.png',
       technologies: [
         'Angular',
@@ -64,20 +64,6 @@ export class ProjectsComponent {
       githubUrl: 'https://github.com/mfrancy/aftercredits',
       liveUrl: ''
     },
-
-    {
-      number: '04',
-      title: 'Biblioteca C#',
-      description:
-        'Object-oriented programming study project built in C#, applying concepts such as encapsulation, inheritance and collections.',
-      image: 'images/projects/biblioteca.png',
-      technologies: [
-        'C#',
-        '.NET',
-        'POO'
-      ],
-      githubUrl: 'https://github.com/mfrancy/biblioteca-console'
-    }
   ];
 
 }
