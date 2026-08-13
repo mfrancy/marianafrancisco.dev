@@ -38,23 +38,25 @@ export class ProjectsComponent {
 
     {
       number: '02',
-      title: 'When The Blog',
+      title: 'Music Twins',
       description:
-        'Blog inspirado no design editorial, com foco em tipografia, experiência de leitura e interfaces minimalistas, desenvolvido com uma arquitetura moderna em Angular.',
-      image: 'images/projects/whentheblog.png',
+        'Aplicação de comparação musical entre usuários do Last.fm, com integração à API, processamento de dados e uma interface editorial desenvolvida em Angular.',
+      image: 'images/projects/musictwin.png',
       technologies: [
         'Angular',
-        'Tailwind',
         'TypeScript',
+        'RxJS',
+        'SCSS',
+        'Last.fm API',
       ],
-      githubUrl: 'https://github.com/mfrancy/when-the-blog'
+      githubUrl: 'https://github.com/mfrancy/music-twin'
     },
 
     {
       number: '03',
       title: 'AfterCredits',
       description:
-        'Aplicação para descoberta de filmes integrada à API do TMDB, com busca, títulos em destaque e interface responsiva.',
+        'Aplicação para comparar hábitos musicais entre usuários do Last.fm, com integração à API e processamento de dados em Angular.',
       image: 'images/projects/aftercredits.png',
       technologies: [
         'Angular',
