@@ -41,15 +41,16 @@ export class ProjectsComponent {
       title: 'Music Twins',
       description:
         'Aplicação de comparação musical entre usuários do Last.fm, com integração à API, processamento de dados e uma interface editorial desenvolvida em Angular.',
-      image: 'images/projects/musictwin.png',
+      image: 'images/projects/music_twins.gif',
       technologies: [
-        'Angular',
+        'Angular',  
         'TypeScript',
         'RxJS',
         'SCSS',
         'Last.fm API',
       ],
-      githubUrl: 'https://github.com/mfrancy/music-twin'
+      githubUrl: 'https://github.com/mfrancy/music-twin',
+      liveUrl: 'https://music-twin-black.vercel.app/comparison'
     },
 
     {
